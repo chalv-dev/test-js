@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
-  <!-- add script tag index.css -->
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Filter</title>
 </head>
 <body>
-  <h1>I mean it's really cool!</h1>
-  <div id="block"></div>
-  <script src="index.js"></script>
+    <h1>Employee List</h1>
+    <label for="categoryFilter">Filter by category:</label>
+    <select id="categoryFilter" onchange="filterEmployees()">
+        <option value="all">All</option>
+        <option value="sales">Sales</option>
+        <option value="engineering">Engineering</option>
+        <option value="marketing">Marketing</option>
+    </select>
+    <ul id="employeeList"></ul>
+    <script src="index.js"></script>
 </body>
 </html>
